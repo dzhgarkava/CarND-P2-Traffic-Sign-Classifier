@@ -13,8 +13,8 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
+[image1]: ./examples/dataset.png "Visualization"
+[image2]: ./examples/grayscale.png "Grayscaling"
 [image3]: ./examples/sign_12.png "Priority road"
 [image4]: ./examples/sign_17.png "No entry"
 [image5]: ./examples/sign_23.png "Slippery road"
