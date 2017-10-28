@@ -56,7 +56,7 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 As a first step, I decided to convert the images to grayscale because color is not really important for traffic signs. We can understand what sign is it by shape. Converting to grayscale also reduce volume of data we need to process and increases velocity of training.
 
-Here is an example of a traffic sign image before and after grayscaling.
+Here is an example of a traffic sign image after grayscaling.
 
 ![alt text][image2]
 
@@ -84,7 +84,6 @@ My final model consisted of the following layers:
 | RELU					| 		      									|
 | Dropout 				| Keep prob 0.5 for training					|
 | Fully connected		| Input 84, output 43        					|
-|						|												|
  
 
 
@@ -103,7 +102,7 @@ If an iterative approach was chosen:
 * _What was the first architecture that was tried and why was it chosen?_ The first architecture was LeNet from the lectures.
 * _What were some problems with the initial architecture?_ Yes. It showed low accuracy by default.
 * _How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting._ I've added normalization layer to increase accuracy, converted images to grayscale to increase speed of training, added maxpooling and dropout layers to reduce overfitting.
-* Which parameters were tuned? How were they adjusted and why? I've changed amount of epochs and batch size based on experiments.
+* _Which parameters were tuned? How were they adjusted and why?_ I've changed amount of epochs and batch size based on experiments.
  
 
 ### Test a Model on New Images
@@ -117,7 +116,7 @@ Here are five German traffic signs that I found on the web:
 
 These images might be difficult to classify because it's clear with white background but model trained on different image with different backgrounds like trees. 
 
-#### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+#### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set.
 
 Here are the results of the prediction:
 
@@ -132,11 +131,11 @@ Here are the results of the prediction:
 
 The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. This is more accurate prediction than prediction on test data.
 
-#### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
+#### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability.
 
 The code for making predictions on my final model is located in the 12th cell of the Ipython notebook.
 
-For most of my images, the model is pretty sure about the prediction (probability of 0.9908 - 1.0). The top five soft max probabilities for each image were
+For most of my images, the model is pretty sure about the prediction (probability of 0.9985 - 1.0). The top five soft max probabilities for each image were
 
 
 #### Image 1 - Priority road
